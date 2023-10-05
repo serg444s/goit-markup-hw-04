@@ -125,18 +125,17 @@ img {
   display: flex;
   gap: 332px;
 }
-/* section 1 */
+/* 1 section hero */
 
 .section-hero {
   background: #2e2f42;
   padding-bottom: 188px;
   padding-top: 188px;
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -182,7 +181,7 @@ img {
   background: #404bbf;
 }
 
-/* section2 */
+/* 2 section Advantages */
 
 .advantages {
   padding-top: 120px;
@@ -212,7 +211,23 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-/* section3 */
+.advantages-svg-box {
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.advantages-svg {
+  width: 64px;
+  height: 64px;
+}
+
+/* 3 section Our Team */
 
 .section-our-team {
   background: #f4f4fd;
@@ -267,7 +282,41 @@ img {
   gap: 24px;
 }
 
-/* section 4 */
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-soc-item {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.team-cos-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-cos-link:hover,
+.team-cos-link:focus {
+  background-color: #404bbf;
+  border-radius: 50%;
+}
+
+.team-soc-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+/* 4 section Portfolio */
 
 .our-portfolio {
   padding-top: 120px;
@@ -315,6 +364,13 @@ img {
   background: var(--WHITE, #fff);
 }
 
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-wrap {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -343,4 +399,50 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.footer-soc-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-soc-item {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.footer-cos-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+}
+
+.footer-cos-link:hover,
+.footer-cos-link:focus {
+  background-color: #31d0aa;
+  border-radius: 50%;
+}
+
+.container-flex {
+  display: flex;
+  gap: 120px;
 }
