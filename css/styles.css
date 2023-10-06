@@ -137,7 +137,8 @@ img {
 .nav-link::after {
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link:focus::after {
   content: "";
   position: absolute;
   left: 0;
