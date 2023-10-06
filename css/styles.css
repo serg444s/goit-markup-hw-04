@@ -133,9 +133,26 @@ img {
   display: flex;
   gap: 332px;
 }
+
+.nav-link::after {
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 /* 1 section hero */
 
 .section-hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background: #2e2f42;
   padding-bottom: 188px;
   padding-top: 188px;
