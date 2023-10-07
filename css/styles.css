@@ -134,11 +134,11 @@ img {
   gap: 332px;
 }
 
-.nav-link::after {
+.current {
+  color: #404bbf;
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
